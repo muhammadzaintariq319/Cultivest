@@ -1,0 +1,324 @@
+🌱 Cultivest - Smart Farming Marketplace & Advisory Platform
+
+## Overview
+
+Cultivest is a Flutter-based smart agriculture platform designed to empower farmers through technology. The application combines a digital marketplace, expert consultation, educational resources, community engagement, and weather analytics into a single ecosystem.
+
+The platform aims to reduce dependency on middlemen, improve market accessibility, and provide farmers with modern tools and information to make informed decisions.
+
+---
+
+## Problem Statement
+
+Small-scale farmers often face challenges such as:
+
+* Limited access to fair marketplaces
+* Dependence on middlemen
+* Lack of expert agricultural guidance
+* Inadequate weather information
+* Difficulty accessing modern farming knowledge
+
+Most existing solutions address only one aspect of farming. Cultivest provides an integrated platform that combines multiple agricultural services in one application.
+
+---
+
+## Key Features
+
+### 🔐 Authentication & User Management
+
+* Role-based authentication
+* Login and Registration
+* Forgot Password
+* Session Persistence
+* Profile Management
+
+### 👨‍🌾 Farmer Dashboard
+
+* Personalized home screen
+* Weather insights
+* Learning resources
+* Community participation
+* Marketplace access
+
+### 🛒 Digital Marketplace
+
+* Direct farmer-to-consumer transactions
+* Product listings
+* Product management
+* Order management
+* Location-based product information
+
+### 📚 Learning Center
+
+* Agricultural guides
+* Educational content
+* Modern farming techniques
+* Expert-verified resources
+
+### 🌦 Weather Analytics
+
+* Real-time location detection
+* Weather forecasting
+* Location-based updates
+* Farming-related weather insights
+
+### 👥 Community Forum
+
+* Agricultural discussions
+* Knowledge sharing
+* Community engagement
+* Farmer interaction
+
+### 🧑‍🏫 Expert Consultation
+
+* Access to agricultural experts
+* Advisory services
+* Expert guidance
+
+### 💾 Offline Support
+
+* SQLite local database
+* Offline data storage
+* Persistent user sessions
+
+---
+
+## System Architecture
+
+### Presentation Layer
+
+* Flutter Material UI
+* Responsive Design
+
+### Business Logic Layer
+
+* Provider State Management
+* Authentication Services
+* Product Management
+
+### Data Layer
+
+* SQLite Database
+* SharedPreferences Caching
+
+### Native Services
+
+* GPS Location Services
+* Reverse Geocoding
+* Image Uploading
+* Cross-Platform Database Support
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* Flutter
+* Dart
+
+### State Management
+
+* Provider
+
+### Database
+
+* SQLite
+* sqflite
+* sqflite_common_ffi
+
+### Location Services
+
+* Geolocator
+* Geocoding
+
+### Image Management
+
+* Image Picker
+
+### Local Storage
+
+* SharedPreferences
+
+### Data Visualization
+
+* fl_chart
+
+### Development Tools
+
+* VS Code
+
+---
+
+## Database Design
+
+### Users Table
+
+* id
+* name
+* email
+* phone
+* password
+* role
+* profile_picture
+* dob
+* country
+
+### Products Table
+
+* id
+* category
+* name
+* description
+* price
+* quantity
+* location
+
+### Posts Table
+
+* id
+* communityName
+* name
+* userName
+* content
+* likes
+
+### Comments Table
+
+* id
+* postId
+* userName
+* content
+
+### Learning Content Table
+
+* id
+* title
+* category
+* description
+
+### Orders Table
+
+* id
+* buyerName
+* productName
+* quantity
+
+---
+
+## APIs & Services
+
+### Geolocator API
+
+Used to retrieve the user's GPS location.
+
+### Reverse Geocoding API
+
+Converts latitude and longitude into city and country information.
+
+### Image Picker API
+
+Allows users to upload and manage images.
+
+### SQLite FFI
+
+Provides SQLite support across multiple platforms.
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Cultivest.git
+```
+
+### Navigate to Project
+
+```bash
+cd Cultivest
+```
+
+### Install Dependencies
+
+```bash
+flutter pub get
+```
+
+### Run Application
+
+```bash
+flutter run
+```
+
+---
+
+## Project Structure
+
+```text
+lib/
+├── models/
+├── providers/
+├── services/
+├── screens/
+├── widgets/
+├── database/
+├── utils/
+└── main.dart
+```
+
+---
+
+## Future Enhancements
+
+* AI-based crop recommendations
+* Live chat with experts
+* Multilingual support
+* Online payment integration
+* Crop disease detection using AI
+* Advanced analytics dashboard
+
+---
+
+## Challenges Faced
+
+* SQLite compatibility across platforms
+* Image storage optimization
+* Responsive UI implementation
+* State synchronization
+* GPS permission management
+
+---
+
+## Contributors
+
+* Muhammad Zain Tariq
+* Abdullah Saleem
+* Hasnain Haider
+* Aqeel Hassan
+* Tabraiz Ali Khan
+
+---
+
+## License
+
+This project was developed for educational and academic purposes at Air University Multan Campus.
+
+---
+
+## Screenshots
+
+Add application screenshots here:
+
+* Login Screen
+* Registration Screen
+* Farmer Dashboard
+* Marketplace Screen
+* Community Forum
+* Learning Center
+* Seller Dashboard
+
+---
+
+⭐ If you found this project useful, consider giving it a star on GitHub.
